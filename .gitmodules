@@ -1,0 +1,3 @@
+[submodule "karaku"]
+	path = karaku
+	url = ./karaku/
