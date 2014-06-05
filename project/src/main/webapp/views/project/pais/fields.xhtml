@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:c="http://java.sun.com/jsp/jstl/core"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:k="http://java.sun.com/jsf/composite/karakucc">
+
+	<ui:param name="controller" value="#{paisController}" />
+	<ui:param name="bean" value="#{controller.bean}" />
+
+	<h:outputLabel for="descripcion" value="#{msg['pais.descripcion']}" />
+	<h:inputText value="#{bean.descripcion}" id="descripcion"
+		disabled="#{not controller.isEditable('descripcion')}" />
+	<rich:messages for="descripcion" />
+
+
+	<h:outputLabel for="habitantes" value="#{msg['pais.habitantes']}" />
+	<h:inputText value="#{bean.habitantes}" id="habitantes"
+		disabled="#{not controller.isEditable('habitantes')}" />
+	<rich:message for="habitantes" />
+
+
+
+</ui:composition>

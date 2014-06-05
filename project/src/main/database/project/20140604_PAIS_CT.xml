@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='iso-8859-1'?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog     http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd">
+	<changeSet author="avolpe@pol.una.py" id="project_pais_ct_001">
+		<createSequence incrementBy="${liquibase.sequence.increment_by}"
+			maxValue="${liquibase.sequence.max_value}" minValue="${liquibase.sequence.min_value}"
+			schemaName="public" sequenceName="pais_id_seq" startValue="${liquibase.sequence.start_value}" />
+		<createTable tableName="pais" schemaName="public">
+			<column name="id" type="BIGINT">
+				<constraints nullable="false" />
+			</column>
+			<column name="descripcion" type="VARCHAR(100)">
+				<constraints nullable="false" />
+			</column>
+			<column name="habitantes" type="NUMERIC(15,4)" />
+			<column name="uri" type="VARCHAR(100)">
+				<constraints nullable="false" />
+			</column>
+
+		</createTable>
+		<addPrimaryKey tableName="pais" constraintName="pais_pkey"
+			columnNames="id" />
+		<addUniqueConstraint columnNames="descripcion"
+			constraintName="un_pais_descripcion" disabled="false" schemaName="public"
+			tableName="pais" />
+	</changeSet>
+</databaseChangeLog>

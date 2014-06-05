@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='iso-8859-1'?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog     http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd">
+	<changeSet author="avolpe@pol.una.py" id="project_seed_pais_id_001">
+		<insert tableName="pais">
+			<column name="id" valueNumeric="1" />
+			<column name="descripcion" value="Paraguay" />
+			<column name="habitantes" valueNumeric="4800000" />
+			<column name="uri" value="www.sistem.com/paises/paraguay" />
+		</insert>
+		<insert tableName="pais">
+			<column name="id" valueNumeric="2" />
+			<column name="descripcion" value="Argentina" />
+			<column name="habitantes" valueNumeric="38000000" />
+			<column name="uri" value="www.sistem.com/paises/argentina" />
+		</insert>
+		<insert tableName="pais">
+			<column name="id" valueNumeric="3" />
+			<column name="descripcion" value="Brasil" />
+			<column name="habitantes" valueNumeric="170000000" />
+			<column name="uri" value="www.sistem.com/paises/argentina" />
+		</insert>
+	</changeSet>
+</databaseChangeLog>

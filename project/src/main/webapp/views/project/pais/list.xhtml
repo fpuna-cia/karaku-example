@@ -8,8 +8,11 @@
 	xmlns:rich="http://richfaces.org/rich"
 	xmlns:k="http://java.sun.com/jsf/composite/karakucc"
 	template="/views/templates/header.xhtml">
-	<ui:define name="content">
 
-		<h1>Bienvenido a Karaku!</h1>
+	<ui:define name="content">
+		<k:list controller="#{paisController}"
+			urlColumns="/views/project/pais/columns.xhtml"
+			urlSearchForm="/views/project/pais/fields.xhtml">
+		</k:list>
 	</ui:define>
 </ui:composition>

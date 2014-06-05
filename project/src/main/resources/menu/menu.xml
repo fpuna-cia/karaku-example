@@ -6,9 +6,16 @@
 		<menu>
 			<id>index</id>
 			<name>menu.index</name>
-			<url>/views/index.xhtml</url>
+			<url>/faces/views/index.xhtml</url>
 			<enabled>TRUE</enabled>
 			<order>1000</order>
+		</menu>
+		<menu>
+			<id>pais</id>
+			<name>pais.menu</name>
+			<url>/faces/views/project/pais/list.xhtml</url>
+			<enabled>TRUE</enabled>
+			<order>1</order>
 		</menu>
 	</items>
 </ns2:menu>
