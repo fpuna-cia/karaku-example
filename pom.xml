@@ -890,7 +890,7 @@
 							<targetPath>views</targetPath>
 						</resource>
 						<resource>
-							<directory>configuracion/src/main/webapp/views</directory>
+							<directory>project/src/main/webapp/views</directory>
 							<targetPath>views</targetPath>
 						</resource>
 						<resource>
