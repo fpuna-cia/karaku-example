@@ -4,18 +4,26 @@
 	<skipThis>true</skipThis>
 	<items>
 		<menu>
-			<id>index</id>
-			<name>menu.index</name>
-			<url>/faces/views/index.xhtml</url>
+		<items>
+			<id>general_menu</id>
+			<name>Projecto - SIGH</name>
+			<order>4</order>
 			<enabled>TRUE</enabled>
-			<order>1000</order>
-		</menu>
-		<menu>
-			<id>pais</id>
-			<name>pais.menu</name>
-			<url>/faces/views/project/pais/list.xhtml</url>
-			<enabled>TRUE</enabled>
-			<order>1</order>
+			<menu>
+				<id>index</id>
+				<name>menu.index</name>
+				<url>/faces/views/index.xhtml</url>
+				<enabled>TRUE</enabled>
+				<order>1000</order>
+			</menu>
+			<menu>
+				<id>pais</id>
+				<name>pais.menu</name>
+				<url>/faces/views/project/pais/list.xhtml</url>
+				<enabled>TRUE</enabled>
+				<order>1</order>
+			</menu>
+		</items>
 		</menu>
 	</items>
 </ns2:menu>
