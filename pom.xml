@@ -32,7 +32,7 @@
 		<version.standard.taglibs>1.1.2</version.standard.taglibs>
 		<version.spring.security>3.2.8.RELEASE</version.spring.security>
 		<version.cglib>2.2</version.cglib>
-		<version.junit>4.11</version.junit>
+		<version.junit>4.13.1</version.junit>
 		<version.org.richfaces.bom>4.2.2.Final</version.org.richfaces.bom>
 		<version.sl4j>1.6.1</version.sl4j>
 		<version.logback>0.9.26</version.logback>
