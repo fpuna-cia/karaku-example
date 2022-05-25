@@ -30,7 +30,7 @@
 		<version.hibernate>4.1.0.Final</version.hibernate>
 		<version.aopalliance>1.0</version.aopalliance>
 		<version.standard.taglibs>1.1.2</version.standard.taglibs>
-		<version.spring.security>3.2.8.RELEASE</version.spring.security>
+		<version.spring.security>5.5.7</version.spring.security>
 		<version.cglib>2.2</version.cglib>
 		<version.junit>4.11</version.junit>
 		<version.org.richfaces.bom>4.2.2.Final</version.org.richfaces.bom>
